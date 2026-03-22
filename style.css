@@ -18,6 +18,7 @@
 }
 body{
     background: #131313;
+      
 }
 .container{
     width: 80%;
@@ -25,7 +26,7 @@ body{
     max-width: 1500px;
 }
 section{
-    padding: 80px;
+  padding: 80px ;
     left: 0;
 }
 img{
@@ -702,4 +703,45 @@ header .links .logo ,
     padding: 15px 20px;
     margin-bottom: 20px;
 }
+}
+
+/* Mobile adjustments */
+@media (max-width:768px){
+
+    body{
+        overflow-x: hidden;
+    }
+
+    section{
+        padding: 60px 15px;
+    }
+
+    /* Hero section */
+    .hero .container{
+        flex-direction: column;
+    }
+    .hero .div_text,
+    .hero .div_img{
+        width: 100%;
+        text-align: center;
+    }
+    .hero .div_img{
+        margin-top: 20px;
+    }
+
+    /* Projects */
+    .projects .project_box{
+        flex-direction: column;
+    }
+    .projects .project_box img,
+    .projects .project_box .text{
+        width: 100%;
+        margin: 0;
+    }
+
+    /* Services */
+    .services .boxs .box{
+        width: 100%;
+    }
+
 }
